@@ -5,17 +5,18 @@
 int num1 = new Random().Next(1, 11);
 int num2 = new Random().Next(1, 11);
 int max = 0;
+int min = 0;
 if (num1 > num2)
 {
     max = num1;
-    //Console.WriteLine(num1);
+    min = num2;
 }
 else
 {
     max = num2;
-    //Console.WriteLine(num2);
+    min = num1;
 }
-Console.WriteLine(max);
+Console.WriteLine($"Максимальное число {max}, минимальное число {min}");
 
 
 /*----------------------------------------------------*/
